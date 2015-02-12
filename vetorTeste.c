@@ -8,7 +8,7 @@ int main(){
         
     int *vetor;
     
-    vetor = malloc(sizeof(int));
+    vetor = malloc(8*sizeof(int));
     
     *(vetor+0) = 61;
     *(vetor+1) = 62;

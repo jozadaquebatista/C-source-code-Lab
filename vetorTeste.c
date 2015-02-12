@@ -1,3 +1,5 @@
+/* Escrevendo um vetor de números na memória com ponteiros. */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,6 +24,6 @@ int main(){
     }
     
     fprintf(stdout, "Fora do loop: %d\n", *(vetor=vetor-8));
-    
+    fprintf(stdout, "Fora do loop: %d\n", *(vetor));
     return(0);
 }

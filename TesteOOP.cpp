@@ -1,10 +1,10 @@
 /* ARQUIVO MOSTRANOME.CPP  */
 #include "mostranome.hpp"
-void mostranome::setNome(std::string x){
+void MostraNome::setNome(std::string x){
 	nome = x;
 }
 
-std::string mostranome::getNome(){
+std::string MostraNome::getNome(){
 	return nome;
 }
 /*******************************************************************/
@@ -14,20 +14,20 @@ std::string mostranome::getNome(){
 #include <string>
 #include <locale.h>
 
-class mostraNome{
+class MostraNome{
 
-	private:
-		std::string nome;
+private:
+	std::string nome;
 
-	public:
-		mostraNome(std::string x){
+public:
+	MostraNome(std::string x){
 
-			std::cout << "Essa e um simples mensagem do metodo construtor." << std::endl;
-			setNome(x);
-		}
+		std::cout << "Essa e um simples mensagem do metodo construtor." << std::endl;
+		setNome(x);
+	}
 
-		void setNome(std::string x);
-		std::string getNome();
+	void setNome(std::string x);
+	std::string getNome();
 };
 /*******************************************************************/
 
@@ -38,7 +38,7 @@ int main(int argc, char **argv){
 
   setlocale(0, "portuguese");
   
-	mostranome obj("nao inserido."), obj2("nao inserido.");
+	MostraNome obj("nao inserido."), obj2("nao inserido.");
 	obj.setNome("Ruffy");
 
 	std::cout << "Seu nome e': " << obj.getNome() << "!" << std::endl;

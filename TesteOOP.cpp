@@ -32,7 +32,7 @@ class mostraNome{
 /*******************************************************************/
 
 /* ARQUIVO MAIN.CPP*/
-#include "mostraNome.h"
+#include "mostraNome.hpp"
 
 int main(int argc, char **argv){
 

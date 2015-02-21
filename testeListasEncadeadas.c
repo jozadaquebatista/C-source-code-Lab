@@ -14,9 +14,9 @@ int main(){
     setlocale(0, "portuguese");
     
     Node
-    *pessoa1 = (Node*)malloc(sizeof(Node)),
-    *pessoa2 = (Node*)malloc(sizeof(Node)),
-    *pessoa3 = (Node*)malloc(sizeof(Node));
+    *pessoa1 = (Node*)malloc(((5<<3)>>1)*sizeof(Node)),
+    *pessoa2 = (Node*)malloc(((5<<3)>>1)*sizeof(Node)), 
+    *pessoa3 = (Node*)malloc(((5<<3)>>1)*sizeof(Node)); 
     
     pessoa1->nome = (char*)malloc(sizeof(char));
     pessoa2->nome = (char*)malloc(sizeof(char));
@@ -38,6 +38,9 @@ int main(){
     fprintf(stdout, "Nome e idade da %dº pessoa: \t\"%s\"......... %d anos.\n", 2, pessoa2->nome, pessoa2->idade);
     fprintf(stdout, "Nome e idade da %dº pessoa: \t\"%s\"............ %d anos.\n", 3, pessoa3->nome, pessoa3->idade);
     
+    /******************
+   **  TROCA MÁGICA   **
+    ******************/
     pessoa1->next = pessoa3;
     pessoa2->next = pessoa2;
     pessoa3->next = pessoa1;
